@@ -1,12 +1,12 @@
 package com.marcelodev.biblioteca.infrastructure.model;
 
-public class Usuario extends Pessoa {
-    public Usuario(String nome) {
+public class Autor extends Pessoa {
+    public Autor(String nome) {
         super(nome);
     }
 
     @Override
     public String getTipo() {
-        return "leitor";
+        return "autor";
     }
 }

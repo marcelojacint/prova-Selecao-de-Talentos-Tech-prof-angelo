@@ -1,5 +1,6 @@
 package com.marcelodev.biblioteca.repository;
 
+import com.marcelodev.biblioteca.infrastructure.model.Autor;
 import com.marcelodev.biblioteca.infrastructure.model.Emprestimo;
 import com.marcelodev.biblioteca.infrastructure.model.Livro;
 import com.marcelodev.biblioteca.infrastructure.model.Usuario;
@@ -11,6 +12,7 @@ import java.util.List;
 public class BibliotecaRepositoryMemoria implements BibliotecaRepository {
     private List<Livro> livros = new ArrayList<>();
     private List<Usuario> usuarios = new ArrayList<>();
+    private List<Autor> autores = new ArrayList<>();
     private List<Emprestimo> emprestimos = new ArrayList<>();
 
     @Override
@@ -24,6 +26,11 @@ public class BibliotecaRepositoryMemoria implements BibliotecaRepository {
     }
 
     @Override
+    public void salvarAutor(Autor autor) {
+        autores.add(autor);
+    }
+
+    @Override
     public List<Livro> listarLivros() {
         return livros;
     }
@@ -31,6 +38,11 @@ public class BibliotecaRepositoryMemoria implements BibliotecaRepository {
     @Override
     public List<Usuario> listarUsuarios() {
         return usuarios;
+    }
+
+    @Override
+    public List<Autor> listarAutores() {
+        return autores;
     }
 
     @Override
