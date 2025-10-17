@@ -4,7 +4,7 @@ import com.marcelodev.biblioteca.business.interfaces.BibliotecaServiceI;
 import com.marcelodev.biblioteca.infrastructure.model.Emprestimo;
 import com.marcelodev.biblioteca.infrastructure.model.Livro;
 import com.marcelodev.biblioteca.infrastructure.model.Usuario;
-import com.marcelodev.biblioteca.repository.BibliotecaRepository;
+import com.marcelodev.biblioteca.repository.interfaces.BibliotecaRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;

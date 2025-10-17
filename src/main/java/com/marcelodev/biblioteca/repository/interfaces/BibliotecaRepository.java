@@ -1,4 +1,4 @@
-package com.marcelodev.biblioteca.repository;
+package com.marcelodev.biblioteca.repository.interfaces;
 
 import com.marcelodev.biblioteca.infrastructure.model.Emprestimo;
 import com.marcelodev.biblioteca.infrastructure.model.Livro;
